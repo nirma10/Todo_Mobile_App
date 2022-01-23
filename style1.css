@@ -1,0 +1,203 @@
+body{
+    box-sizing: border-box;
+    border: solid 1px black;
+    height: 100vh;
+}
+.mobile, .mobile-navigation{
+    display: none;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    /* margin-left: 92px; */
+    margin-top: 100px;
+    margin-left: 229px;
+    margin-right: 240px;
+}
+.flex-item-p {
+    display: inline;
+    color: gray;
+    margin-left: 10px;
+}
+.flex-item-1{
+    font-size: 70px;
+}
+.flex-item-p1 {
+    display: inline;
+    position: relative;
+    font-size: 40px;
+    color: gray;
+}
+span{
+    color: tomato;
+    position: relative;
+    top: 10px;
+}
+.flex-container-1{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+.common {
+    border: 1px solid tomato;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 2px 2px 6px grey;
+    margin: 50px;
+    height: 50vh;
+    width: 222px;
+}
+.completedTask {
+    color: red;
+    display: inline;
+    float: right;
+    position: relative;
+    right: 30px;
+    text-decoration: line-through;
+    font-size: 25px;
+}
+.trip {
+    float: right;
+    font-size: 28px;
+    color: tomato;
+    margin-bottom: 15px;
+    position: relative;
+    right: 20px;
+}
+.line{
+    clear: right;
+    position: relative;
+    left: 21px;
+    width: 80%;
+}
+#pendingTask {
+    float: left;
+    font-size: 20px;
+    position: relative;
+    left: 15px;
+}
+@media screen and (max-width: 480px) {
+    .mobile{
+        display: flex;
+    }
+    body{
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    .flex-container ,.flex-container-1{
+        display: none;
+    }
+    h1{
+        display: inline-block;
+        /* position: relative;
+        top: 60px; */
+        /* left: 100px; */
+    }
+    .mobile-header{
+        font-size: 30px;
+    }
+    h3 {
+        display: inline;
+        font-weight: normal;
+        /* position: relative; */
+        /* top: 60px; */
+        margin-left: 10px;
+        font-size: 50px;
+    }
+    .add-circle{
+        position: absolute;
+        right: 0px;
+        top: 60px;
+    }
+    .mobile-navigation {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px;
+    }
+    .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5{
+        border: 2px solid tomato;
+        margin: 10px;
+        padding: 20px;
+        font-size: 25px;
+        font-weight: normal;
+        color: gray;
+        border-radius: 10px;
+        box-shadow: 2px 2px 6px grey;
+    }
+    a {
+        color: gray;
+        text-decoration: none;
+    }
+}
+    /* .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Roboto', sans-serif;
+        /* justify-content: space-between; 
+    }
+    .flex-item-p {
+        display: inline;
+        color: gray;
+        margin-left: 10px;
+    }
+    .flex-item-1{
+        font-size: 70px;
+    }
+    .flex-item-p1 {
+        display: inline;
+        position: relative;
+        font-size: 40px;
+        color: gray;
+    }
+    span{
+        color: tomato;
+        position: relative;
+        top: 10px;
+    }
+    .flex-container-1{
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Roboto', sans-serif;
+        justify-content: center;
+    }
+    .common {
+        border: 1px solid tomato;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 2px 2px 6px grey;
+        margin: 50px;
+        height: 50vh;
+        width: 222px;
+    }
+    .completedTask {
+        color: red;
+        display: inline;
+        float: right;
+        position: relative;
+        right: 30px;
+        text-decoration: line-through;
+        font-size: 25px;
+    }
+    .trip {
+        float: right;
+        font-size: 28px;
+        color: tomato;
+        margin-bottom: 15px;
+        position: relative;
+        right: 20px;
+    }
+    .line{
+        clear: right;
+        position: relative;
+        left: 21px;
+        width: 80%;
+    }
+    #pendingTask {
+        float: left;
+        font-size: 20px;
+        position: relative;
+        left: 15px;
+    } */

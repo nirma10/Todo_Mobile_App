@@ -1,0 +1,230 @@
+
+.parent1{
+    filter: blur(6px);
+    z-index: -1;
+}
+body{
+    box-sizing: border-box;
+    border: solid 1px black;
+    height: 100vh;
+}
+/* .mobile-parent1, .mobile-parent2{
+    display: none;
+} */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    /* margin-left: 92px; */
+    margin-top: 100px;
+    margin-left: 229px;
+    margin-right: 240px;
+}
+.flex-item-p {
+    display: inline;
+    color: gray;
+    margin-left: 10px;
+}
+.flex-item-1{
+    font-size: 70px;
+}
+.flex-item-p1 {
+    display: inline;
+    position: relative;
+    font-size: 40px;
+    color: gray;
+}
+span{
+    color: tomato;
+    position: relative;
+    top: 10px;
+}
+.flex-container-1{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+.common {
+    border: 1px solid tomato;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 2px 2px 6px grey;
+    margin: 50px;
+    height: 50vh;
+    width: 222px;
+}
+.completedTask {
+    color: red;
+    display: inline;
+    float: right;
+    position: relative;
+    right: 30px;
+    text-decoration: line-through;
+    font-size: 25px;
+}
+.trip {
+    float: right;
+    font-size: 28px;
+    color: tomato;
+    margin-bottom: 15px;
+    position: relative;
+    right: 20px;
+}
+.line{
+    clear: right;
+    position: relative;
+    left: 21px;
+    width: 80%;
+}
+#pendingTask {
+    float: left;
+    font-size: 20px;
+    position: relative;
+    left: 15px;
+}
+
+.parent2 {
+    z-index: +1;
+    position: absolute;
+    top: 180px;
+    left: 450px;
+  }
+  .parent2-flex-container{
+    display: flex;
+    justify-content: space-around;
+  }
+  .parent2-flex-item {
+    width: 300px;
+    position: relative;
+    top: 152px;
+    left: 46px;
+    line-height: 50px;
+    text-align: center;
+    height: 158px;
+    box-shadow: 1px 1px 8px grey;
+    border: 1px solid tomato;
+    border-radius: 8px;
+    background-color: white;
+}
+#addNewList {
+    width: 200px;
+    border: solid 1px tomato;
+    border-radius: 4px;
+    height: 23px;
+    box-shadow: 2px 2px 6px grey;
+  }
+  input[name="submit"] {
+    color: white;
+    width: 67px;
+    font-weight: bold;
+    border: none;
+    background-color: tomato;
+    padding: 8px;
+    border-radius: 16px;
+  }
+.trip-paris {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .parent1,.parent2{
+        display: none;
+    }
+.mobile-parent1{
+    filter: blur(6px);
+    z-index: -1;
+}
+.mobile-parent2 {
+    z-index: 1;
+    position: absolute;
+    top: 70px;
+  }
+    .mobile{
+        display: flex;
+    }
+    body{
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+   
+    h1{
+        display: inline-block;
+        /* position: relative;
+        top: 60px; */
+        /* left: 100px; */
+    }
+    .mobile-header{
+        font-size: 30px;
+    }
+    h3 {
+        display: inline;
+        font-weight: normal;
+        /* position: relative; */
+        /* top: 60px; */
+        margin-left: 10px;
+        font-size: 50px;
+    }
+    a{
+        position: absolute;
+        right: 0px;
+        top: 60px;
+    }
+    .mobile-navigation {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px;
+    }
+    .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5{
+        border: 2px solid tomato;
+        margin: 10px;
+        padding: 20px;
+        font-size: 25px;
+        font-weight: normal;
+        color: gray;
+        border-radius: 10px;
+        box-shadow: 2px 2px 6px grey;
+    }
+    .parent2 {
+        z-index: +1;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .parent2-flex-container{
+        display: flex;
+        justify-content: space-around;
+      }
+      .parent2-flex-item {
+        width: 300px;
+        position: relative;
+        top: 152px;
+        left: 46px;
+        line-height: 50px;
+        text-align: center;
+        height: 158px;
+        box-shadow: 1px 1px 8px grey;
+        border: 1px solid tomato;
+        border-radius: 8px;
+        background-color: white;
+    }
+    #addNewList {
+        width: 200px;
+        border: solid 1px tomato;
+        border-radius: 4px;
+        height: 23px;
+        box-shadow: 2px 2px 6px grey;
+      }
+      input[name="submit"] {
+        color: white;
+        width: 67px;
+        font-weight: bold;
+        border: none;
+        background-color: tomato;
+        padding: 8px;
+        border-radius: 16px;
+      }
+}
