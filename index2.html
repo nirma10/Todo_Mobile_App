@@ -14,58 +14,60 @@
 </head>
 
 <body>
-    <div class="parent1">
-        <div class="flex-container">
-            <div class="flex-item-1">
-                <b>Tasks</b>
-                <p class="flex-item-p">Lists</p>
+    <div class="desktop">
+        <div class="parent1">
+            <div class="flex-container">
+                <div class="flex-item-1">
+                    <b>Tasks</b>
+                    <p class="flex-item-p">Lists</p>
+                </div>
+                <div class="flex-item-1">
+                    <a href="index2.html"><span class="material-icons" style="font-size: 45px;color: tomato;">
+                            add_circle
+                        </span></a>
+                    <p class="flex-item-p1">Add List</p>
+                </div>
             </div>
-            <div class="flex-item-1">
-                <a href="index2.html"><span class="material-icons" style="font-size: 45px;color: tomato;">
-                        add_circle
-                    </span></a>
-                <p class="flex-item-p1">Add List</p>
+            <div class="flex-container-1">
+                <div class="common trip-to-paris">
+                    <a href="index3.html" style="color: tomato;">
+                        <p class="trip">Trip to Paris</p>
+                    </a>
+                    <hr class="line">
+                    <p class="completedTask">
+                        Completed Task
+                    </p>
+                    <label id="pendingTask"><input type="checkbox" value="Pending Task">Pending Task</label>
+                </div>
+                <div class="common my-first-todo-list">
+                    <p class="trip">My Todo List</p>
+                    <hr class="line">
+                    <p class="completedTask">
+                        Completed Task
+                    </p>
+                    <label id="pendingTask"><input type="checkbox" value="Pending Task">Pending Task</label>
+                </div>
+                <div class="common my-todo-list">
+                    <p class="trip">My Todo List</p>
+                    <hr class="line">
+                    <p class="completedTask">
+                        Completed Task
+                    </p>
+                    <label id="pendingTask"><input type="checkbox" value="Pending Task">Pending Task</label>
+                </div>
             </div>
         </div>
-        <div class="flex-container-1">
-            <div class="common trip-to-paris">
-                <a href="index3.html" style="color: tomato;">
-                    <p class="trip">Trip to Paris</p>
-                </a>
-                <hr class="line">
-                <p class="completedTask">
-                    Completed Task
-                </p>
-                <label id="pendingTask"><input type="checkbox" value="Pending Task">Pending Task</label>
-            </div>
-            <div class="common my-first-todo-list">
-                <p class="trip">My Todo List</p>
-                <hr class="line">
-                <p class="completedTask">
-                    Completed Task
-                </p>
-                <label id="pendingTask"><input type="checkbox" value="Pending Task">Pending Task</label>
-            </div>
-            <div class="common my-todo-list">
-                <p class="trip">My Todo List</p>
-                <hr class="line">
-                <p class="completedTask">
-                    Completed Task
-                </p>
-                <label id="pendingTask"><input type="checkbox" value="Pending Task">Pending Task</label>
+        <div class="parent2">
+            <div class="parent2-flex-container">
+                <div class="parent2-flex-item">
+                    <label for="addNewList">Add New Item</label>
+                    <input type="text" name="addNewList" id="addNewList"><br>
+                    <input type="submit" value="ADD" name="submit">
+                </div>
             </div>
         </div>
     </div>
-    <div class="parent2">
-        <div class="parent2-flex-container">
-            <div class="parent2-flex-item">
-                <label for="addNewList">Add New Item</label>
-                <input type="text" name="addNewList" id="addNewList"><br>
-                <input type="submit" value="ADD" name="submit">
-            </div>
-        </div>
-    </div>
-
+   <div class="mobile-view">
     <div class="mobile-parent1">
         <div class="mobile">
             <div class="mobile-header">
@@ -103,6 +105,9 @@
             </div>
         </div>
     </div>
+   </div>
+
+   
 </body>
 
 </html>

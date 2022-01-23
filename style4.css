@@ -3,9 +3,9 @@ body{
     border: solid 1px black;
     height: 100vh;
 }
-/* .mobile-parent2, .mobile-parent1{
-    display:none;
-} */
+.mobile-view{
+    display: none;
+}
 .parent1{
     filter: blur(5px);
     z-index: -1;
@@ -158,6 +158,12 @@ label {
             font-size: 30px;
         
       
+    }
+    .desktop-view{
+        display: none;
+    }
+    .mobile-view{
+        display: block;
     }
     .mobile-parent1{
         filter: blur(5px);
